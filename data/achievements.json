@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "Reddit Achievements",
+  "lastReviewed": "2026-11-22",
+  "sourcePolicy": "Official criteria are transcribed from Reddit Help Center. This is a verified subset, not a complete catalogue.",
+  "achievements": [
+    {
+      "id": "elder",
+      "name": "Elder",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises long-term membership in a community.",
+      "unlock": {
+        "summary": "Be a member of any community for three years.",
+        "criteria": [
+          {
+            "metric": "community_membership_duration",
+            "operator": "at_least",
+            "value": 3,
+            "unit": "years"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ],
+      "notes": "The official article says any community; do not assume every community is eligible."
+    },
+    {
+      "id": "repeat-contributor",
+      "name": "Repeat Contributor",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises recurring contributions to the same community.",
+      "unlock": {
+        "summary": "Post or comment in the same community on 20 total days.",
+        "criteria": [
+          {
+            "metric": "distinct_contribution_days_same_community",
+            "operator": "at_least",
+            "value": 20,
+            "unit": "days"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "super-contributor",
+      "name": "Super Contributor",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises sustained high-ranking, high-quality contributions in a community.",
+      "unlock": {
+        "summary": "Be in the top 1% of posters or commenters, remain in the top 1% for five of the last twelve months, and maintain an upvote rate above 90%.",
+        "criteria": [
+          {
+            "metric": "community_poster_or_commenter_rank",
+            "operator": "top_percentile",
+            "value": 1,
+            "unit": "percent"
+          },
+          {
+            "metric": "months_in_top_1_percent_within_last_12",
+            "operator": "at_least",
+            "value": 5,
+            "unit": "months"
+          },
+          {
+            "metric": "upvote_rate",
+            "operator": "greater_than",
+            "value": 90,
+            "unit": "percent"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ],
+      "notes": "Reddit's wording says top 1% of posters or commenters; this record preserves that wording."
+    },
+    {
+      "id": "content-connoisseur",
+      "name": "Content Connoisseur",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises consistent voting activity in a community.",
+      "unlock": {
+        "summary": "Vote on posts or comments at least five times a day for 30 total days.",
+        "criteria": [
+          {
+            "metric": "votes_per_day",
+            "operator": "at_least",
+            "value": 5,
+            "unit": "votes"
+          },
+          {
+            "metric": "qualifying_days",
+            "operator": "at_least",
+            "value": 30,
+            "unit": "days"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "flag-planter",
+      "name": "Flag Planter",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises early participation in new posts.",
+      "unlock": {
+        "summary": "Be one of the first five commenters within the first 24 hours of a post on 10 total days.",
+        "criteria": [
+          {
+            "metric": "commenter_position",
+            "operator": "at_most",
+            "value": 5,
+            "unit": "position"
+          },
+          {
+            "metric": "comment_age",
+            "operator": "at_most",
+            "value": 24,
+            "unit": "hours"
+          },
+          {
+            "metric": "qualifying_days",
+            "operator": "at_least",
+            "value": 10,
+            "unit": "days"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "thats-me",
+      "name": "That's Me",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises setting a user flair in a community.",
+      "unlock": {
+        "summary": "Set your user flair in any community.",
+        "criteria": [
+          {
+            "metric": "user_flair_set",
+            "operator": "equals",
+            "value": true,
+            "unit": "boolean"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "rising-star",
+      "name": "Rising Star",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises strong early reception in a community.",
+      "unlock": {
+        "summary": "Get 1,000 upvotes during your first month in a community.",
+        "criteria": [
+          {
+            "metric": "upvotes_in_first_month_same_community",
+            "operator": "at_least",
+            "value": 1000,
+            "unit": "upvotes"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "picasso",
+      "name": "Picasso",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises popular media posts or comments.",
+      "unlock": {
+        "summary": "Create media posts or comments that receive 100 total upvotes.",
+        "criteria": [
+          {
+            "metric": "upvotes_on_media_posts_or_comments",
+            "operator": "at_least",
+            "value": 100,
+            "unit": "upvotes"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ]
+    },
+    {
+      "id": "top-percentile",
+      "name": "Top %",
+      "system": "achievement",
+      "category": "community",
+      "description": "Recognises a top-percentile poster or commenter in a community for the previous month.",
+      "unlock": {
+        "summary": "Finish the previous month in the top percentile as a poster or commenter in the same community.",
+        "criteria": [
+          {
+            "metric": "previous_month_community_rank",
+            "operator": "top_percentile",
+            "value": "unspecified",
+            "unit": "percentile"
+          }
+        ]
+      },
+      "status": "official",
+      "availability": "current_as_documented",
+      "repeatable": "unknown",
+      "sources": [
+        {
+          "type": "official",
+          "title": "Community Achievements",
+          "url": "https://support.reddithelp.com/hc/en-us/articles/25564722077588-Community-Achievements"
+        }
+      ],
+      "notes": "The official article does not specify the percentile threshold in this entry's description; do not infer it."
+    }
+  ]
+}
