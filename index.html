@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <meta name="description" content="Samurai Run — an original modern 2D samurai platformer. Run, leap, slash and collect gold.">
+  <title>Samurai Run — The Forgotten Village</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Samurai Run home"><span class="brand-mark">刀</span><span>SAMURAI <b>RUN</b></span></a>
+      <div class="top-meta"><span class="live-dot"></span> FIRST PLAYABLE BUILD <span class="version">v0.1.0</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A NEW ADVENTURE BEGINS</p>
+        <h1>THE WAY OF<br><em>THE SAMURAI.</em></h1>
+        <p class="hero-description">Dash through a forgotten land, master your blade, gather lost gold and find the gate beyond the village.</p>
+        <a class="primary-cta" href="#play">PLAY NOW <span>↘</span></a>
+        <div class="hero-note"><span>✦</span> Built for keyboard · No download required</div>
+      </div>
+      <div class="hero-art" aria-label="Samurai Run artwork">
+        <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="torii-art"><i></i><b></b><span></span></div>
+        <div class="hero-samurai"><div class="scarf"></div><div class="hat"></div><div class="head"></div><div class="body"></div><div class="legs"></div><div class="blade"></div></div>
+        <div class="petal p1">✿</div><div class="petal p2">✿</div><div class="petal p3">✿</div>
+        <div class="art-caption">WORLD 01 <b>— FORGOTTEN VILLAGE</b></div>
+      </div>
+    </section>
+
+    <section class="game-section" id="play">
+      <div class="section-heading"><div><p class="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>ENTER THE <em>VILLAGE</em></h2></div><span class="chapter-tag">CHAPTER 01 / 04</span></div>
+      <div class="game-frame">
+        <div class="game-toolbar"><span><i class="live-dot"></i> GAME WINDOW</span><span class="toolbar-right">FORGOTTEN VILLAGE <b>●</b></span></div>
+        <div class="game-stage">
+          <canvas id="game" width="960" height="540" aria-label="Samurai Run game canvas"></canvas>
+          <div class="game-hud">
+            <div class="hud-left"><span class="hud-chip">❤ <b id="health">3</b></span><span class="hud-chip">✦ <b id="coins">0</b></span></div>
+            <div class="hud-score">SCORE <b id="score">00000</b></div>
+          </div>
+          <div class="game-overlay" id="overlay">
+            <div class="overlay-card"><div class="overlay-symbol">刀</div><p class="eyebrow" id="overlay-kicker">WORLD 01 · FORGOTTEN VILLAGE</p><h3 id="overlay-title">SAMURAI <em>RUN</em></h3><p id="overlay-text">Run, jump and slash your way through the village. Collect every coin you can and reach the red torii gate.</p><button class="start-button" id="start">START ADVENTURE <span>→</span></button><small>BEST PLAYED WITH A KEYBOARD</small></div>
+          </div>
+        </div>
+        <div class="game-footer"><span>⚔ <b>OBJECTIVE</b> Reach the torii gate</span><span><b>COINS</b> <i>✦</i> Collect gold along the way</span><span><b>HEALTH</b> ❤ Three hearts</span></div>
+      </div>
+      <div class="controls">
+        <div class="control-title">CONTROLS</div>
+        <div class="control-item"><kbd>←</kbd><kbd>→</kbd><span>Move</span></div>
+        <div class="control-item"><kbd>SPACE</kbd><span>Jump · Press again in air for a double jump</span></div>
+        <div class="control-item"><kbd>X</kbd><span>Sword slash</span></div>
+        <div class="control-item"><kbd>R</kbd><span>Restart level</span></div>
+      </div>
+    </section>
+
+    <section class="features">
+      <article><span class="feature-icon">⚔</span><h3>MASTER THE BLADE</h3><p>Time your sword strikes to defeat wandering training spirits.</p></article>
+      <article><span class="feature-icon">✦</span><h3>FIND THE GOLD</h3><p>Explore the path and collect hidden golden coins for a higher score.</p></article>
+      <article><span class="feature-icon">⛩</span><h3>REACH THE GATE</h3><p>Cross broken paths, avoid danger and make it to the village exit.</p></article>
+    </section>
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">刀</span><span>SAMURAI <b>RUN</b></span></a><span>AN ORIGINAL 2D PLATFORMER · BUILT WITH HTML CANVAS</span><span>© 2026 SAMURAI RUN</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
